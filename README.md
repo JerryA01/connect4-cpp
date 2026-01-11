@@ -1,4 +1,8 @@
-# tic-tac-toe-cpp
+# Connect 4 in C++
+
+---
+
+## Project Overview
 
 This is a **C++ implementation of the classic Connect 4 game**, enhanced with two unique features that add strategic depth to gameplay:
 
@@ -6,6 +10,18 @@ This is a **C++ implementation of the classic Connect 4 game**, enhanced with tw
 2. **Remove a Counter** – Players can remove a single counter from the board, allowing them to block a winning move or create a new opportunity.
 
 These mechanics introduce a **new layer of strategy and unpredictability**, encouraging players to think dynamically and adapt to sudden changes during play. Limitations (such as using the abilities only once per game or under specific conditions) are implemented to maintain **balance and fairness**.
+
+---
+
+## Object-Oriented Design
+
+This project is implemented using **object-oriented programming (OOP)** principles:
+
+- **Classes** represent key game entities, such as `Board`, `Player`, `HumanPlayer`, and `Game`.
+- **Encapsulation** is used to hide board data and player state, exposing only relevant methods.
+- **Inheritance** allows `HumanPlayer` to extend the abstract `Player` class.
+- **Polymorphism** is used to allow different player types to implement `makeMove` differently.
+- The modular design makes the code **extensible and maintainable**, demonstrating good OOP practice.
 
 ---
 
@@ -17,7 +33,7 @@ These mechanics introduce a **new layer of strategy and unpredictability**, enco
   - Row removal
   - Single counter removal
 - Board state printed to the console after each move
-- Win detection for both vertical, horizontal, and diagonal connections
+- Win detection for vertical, horizontal, and diagonal connections
 
 ---
 
